@@ -1,6 +1,6 @@
 package server
 
-// swagger:route GET /v1/nums findPairRequest
+// swagger:route GET /v1/num findPairRequest
 //
 // Find whether there is a pair of numbers that sums up to target
 //
