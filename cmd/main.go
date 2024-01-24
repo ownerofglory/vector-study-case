@@ -31,7 +31,7 @@ func main() {
 	// start web server
 	c := make(chan error)
 	go func() {
-		c <- r.Run(":8000")
+		c <- r.Run(":80")
 		logging.Info("Gracefully shut down the server")
 	}()
 	logging.Info("Application started")
