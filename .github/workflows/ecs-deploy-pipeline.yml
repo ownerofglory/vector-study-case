@@ -9,7 +9,14 @@
 
 name: Deploy to Amazon ECS
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      region:
+        description: 'Region'
+        required: true
+        type: choice
+        options:
+          - eu-central-1
 
 env:
   AWS_REGION: eu-central-1
