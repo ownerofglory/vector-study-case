@@ -8,11 +8,8 @@
 # You can also reference a tag or branch, but the action may change without warning.
 
 name: Deploy to Amazon ECS
-
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch
 
 env:
   AWS_REGION: eu-central-1
